@@ -6,27 +6,38 @@ const gulp = require('gulp'),
     concat = require('gulp-concat');
 
 gulp.task('js', () => {
-    return gulp.src('asstes/js/**/*.js')
-            .pipe(concat())
-            .pipe(uglify());
+    return gulp.src(['src/js/bootstrap.js', 'src/js/*.js'])
+            .pipe(concat('main.min.js'))
+            .pipe(uglify())
+            .pipe(gulp.dest('build/js/'));
 });
 
 gulp.task('sass', () => {
-    return gulp.src('assets/scss/*.scss')
-            .pipe(sass())
+    return gulp.src('src/scss/**/*.scss')
+            .pipe(sass({
+                outputStyle: 'compressed',
+                errLogToConsole: true
+            }))
+            .pipe(concat('main.min.css'))
+            .pipe(autoprefixer({
+                browsers: ['last 2 versions'],
+                cascade: false
+            }))
             .pipe(gulp.dest('build/css/'));
 });
 
 gulp.task('pug', () => {
     return gulp.src('*.pug')
-            .pipe(pug())
-            .pipe(gulp.dest('build/'))
+            .pipe(pug({
+                pretty: true
+            }))
+            .pipe(gulp.dest('build/'));
 });
 
 gulp.task('watch', () => {
-    gulp.watch('assets/scss/*.scss', gulp.series('sass'));
+    gulp.watch('src/scss/**/*.scss', gulp.series('sass'));
     gulp.watch('*.pug', gulp.series('pug'));
-    gulp.watch('assets/js/**/*.js', gulp.series('js'));
+    gulp.watch('src/js/**/*.js', gulp.series('js'));
 });
 
-gulp.task('default', ['watch']);
+gulp.task('default', gulp.series('watch'));
