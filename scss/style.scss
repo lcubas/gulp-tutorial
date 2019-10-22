@@ -2,17 +2,17 @@
 
 @font-face {
     font-family: DolceVita;
-    src: url(../assets/fonts/typography/DolceVita.ttf);
+    src: url(fonts/typography/DolceVita.ttf);
 }
 
 @font-face {
     font-family: DolceVitaHeavyBold;
-    src: url(../assets/fonts/typography/DolceVitaHeavyBold.ttf);
+    src: url(fonts/typography/DolceVitaHeavyBold.ttf);
 }
 
 @font-face {
     font-family:ContrailOne-Regular;
-    src: url(../assets/fonts/typography/ContrailOne-Regular.ttf);
+    src: url(fonts/typography/ContrailOne-Regular.ttf);
 }
 
 .navbar-default{
@@ -85,31 +85,31 @@
 }
 
 .fb {
-	background-image: url(../assets/images/fb_blanco.png);
+	background-image: url(../images/social-icons/fb-white.png);
 }
 
 .fb.scroll {
-	background-image: url(../assets/images/fb_negro.png);
+	background-image: url(../images/social-icons/fb-black.png);
 }
 
 .twitter {
-	background-image: url(../assets/images/twitter_blanco.png);
+	background-image: url(../images/social-icons/twitter-white.png);
 }
 
 .twitter.scroll {
-	background-image: url(../assets/images/twitter_negro.png);
+	background-image: url(../images/social-icons/twitter-black.png);
 }
 
 .youtube {
-	background-image: url(../assets/images/youtube_blanco.png);
+	background-image: url(../images/social-icons/youtube-white.png);
 }
 
 .youtube.scroll {
-	background-image: url(../assets/images/youtube_negro.png);
+	background-image: url(../images/social-icons/youtube-black.png);
 }
 
 .box{
-    background-image: url(../img/tile3.png);
+    background-image: url(../images/background.png);
     padding: 10% 0%;
 }
 
