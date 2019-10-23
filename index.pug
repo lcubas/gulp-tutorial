@@ -5,213 +5,214 @@ head
   title OLASPERU
   link(rel='icon' type='image/png' href='images/icon.png')
   link(rel='stylesheet' type='text/css' href='css/main.min.css')
-header
-  nav.navbar.navbar-default.navbar-fixed-top
-    .container-fluid
-      // Brand and toggle get grouped for better mobile display
-      .navbar-header
-        button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false')
-          span.sr-only Toggle navigation
-          span.icon-bar
-          span.icon-bar
-          span.icon-bar
-        .logo
-          a(href='#logo')
-            img(src='images/logo.png')
-      // Collect the nav links, forms, and other content for toggling
-      #bs-example-navbar-collapse-1.collapse.navbar-collapse
-        ul.nav.navbar-nav
-          li
-            a(href='#nosotros') NOSOTROS
-          li
-            a(href='#actividades') ACTIVIDADES
-          li
-            a(href='#paquetes') PAQUETES
-        ul.nav.navbar-nav.navbar-right
-          li
-            a(href='#mapa') UB&Iacute;CANOS
-          li.dropdown
-            a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
-              | CONT&Aacute;CTO
-              span.caret
-            ul.dropdown-menu
-              li
-                a(href='#contacto') CONT&Aacute;CTO
-#myCarousel.carousel.slide(data-ride='carousel')
-  // Indicators
-  ol.carousel-indicators
-    li.active(data-target='#myCarousel' data-slide-to='0')
-    li(data-target='#myCarousel' data-slide-to='1')
-    li(data-target='#myCarousel' data-slide-to='2')
-    li(data-target='#myCarousel' data-slide-to='3')
-  // Wrapper for slides
-  .carousel-inner(role='listbox')
-    .item.active
-      img(src='images/banner/banner-1.jpg' alt='Chania')
-    .item
-      img(src='images/banner/banner-2.jpg' alt='Chania')
-    .item
-      img(src='images/banner/banner-3.jpg' alt='Flower')
-  // Left and right controls
-  a.left.carousel-control(href='#myCarousel' role='button' data-slide='prev')
-    span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
-    span.sr-only Previous
-  a.right.carousel-control(href='#myCarousel' role='button' data-slide='next')
-    span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
-    span.sr-only Next
-.redes.hidden-xs
-  .icono-social.fb
-    a(href='# https://www.facebook.com/')
-  .icono-social.twitter
-    a(href='# https://www.twitter.com/')
-  .icono-social.youtube
-    a(href='# https://www.youtube.com/')
-#nosotros.box
-  h2  Conoce a Nuestro Equipo 
-  h3 Desde 1970 formando a los mejores expertos en surf. 
-  .container
-    .row
-      .col-md-4.col-sm-4
-        .display
-          img.img-responsive(src='images/img-3.jpg')
-          .overlay
-            .frase
-              span  &iexcl;Adoro el surf! 
-        h4 Leticia Rodrigues
-        p T&eacute;cnico Surf Center
-      .col-md-4.col-sm-4
-        .display
-          img.img-responsive(src='images/img-6.jpg')
-          .overlay
-            .frase
-              span  &iexcl;No existe limites de edad! !
-        h4 Mark Hassan
-        p T&eacute;cnico Surf Children
-      .col-md-4.col-sm-4
-        .display
-          img.img-responsive(src='images/img-5.jpg')
-          .overlay
-            .frase
-              span  &iexcl;Cool!
-        h4 Julio Sarmiento
-        p T&eacute;cnico Surf Center
-#actividades
-  .container
-    .row
-      .col-md-3
-        span.glyphicon.glyphicon-grain(aria-hidden='true')
-        p
-          | Actividades ecoamigables para 
-          br
-          | el medio ambiente.
-      .col-md-3
-        span.glyphicon.glyphicon-fire(aria-hidden='true')
-        p
-          | Fogatas durante y despu&eacute;s
-          br
-          | del sunset.
-      .col-md-3
-        span.glyphicon.glyphicon-music(aria-hidden='true')
-        p
-          | M&uacute;sica durante todas 
-          br
-          |  las actividades.
-      .col-md-3
-        span.glyphicon.glyphicon-tint(aria-hidden='true')
-        p
-          | Surf bajo la vigilancia
-          br
-          | de los expertos.
-#paquetes1.box-2
-  h2  nuestros paquetes 
-  h3 Temporada Verano 
-  .container
-    .row
-      .col-md-4.col-sm-4
-        .columna1
-          .pack1.texto-pack1 PACK 1
-          .pack1.precio s/. 300 
-          .pack1.periodo por un mes
-          .pack1-border.semana Una vez por semana
-          .pack1-border.paquete
-            | El paquete incluye:
-            ul
-              li Clase de surf (con instructores certificados) 
-              li  Accesorios  (tabla, wetsuit, pita, etc.) 
-              li  Seguro contra accidentes (MAPFRE) 
-          .pack1-border.paquete1 Horarios accesibles
-          .pack1-border.inscribete
-            .boton
-              button(type='submit') INSCR&Iacute;BETE
-      .col-md-4.col-sm-4
-        .columna1
-          .pack1.texto-pack1 PACK 2
-          .pack1.precio s/. 600 
-          .pack1.periodo por un mes
-          .pack1-border.semana Dos veces por semana
-          .pack1-border.paquete
-            | El paquete incluye:
-            ul
-              li Clase de surf (con instructores certificados) 
-              li  Accesorios  (tabla, wetsuit, pita, etc.) 
-              li  Seguro contra accidentes (MAPFRE) 
-          .pack1-border.paquete1 Horarios accesibles
-          .pack1-border.inscribete
-            .boton
-              button(type='submit') INSCR&Iacute;BETE
-      .col-md-4.col-sm-4
-        .columna1
-          .pack1.texto-pack1 PACK 3
-          .pack1.precio s/. 800 
-          .pack1.periodo por un mes
-          .pack1-border.semana Tres veces por semana
-          .pack1-border.paquete
-            | El paquete incluye:
-            ul
-              li Clase de surf (con instructores certificados) 
-              li  Accesorios  (tabla, wetsuit, pita, etc.) 
-              li  Seguro contra accidentes (MAPFRE) 
-          .pack1-border.paquete1 Horarios accesibles
-          .pack1-border.inscribete
-            .boton
-              button(type='submit') INSCR&Iacute;BETE
-#contacto.box
-  h2  Cont&aacute;ctanos 
-  h3 No pierdas la oportunidad de aprender a surfear. 
-  .container
-    .row.contacto-box
-      .col-md-6.col-sm-6
-        #mapa.mapa
-          iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7801.542063117854!2d-77.02861751451918!3d-12.127812792367818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81e39fe72af%3A0xf38ed38652be6a31!2sAv+Jose+Larco%2C+Miraflores+15074!5e0!3m2!1ses-419!2spe!4v1427606603251' width='100%' height='420px' frameborder='0' style='border:0')
-      .col-md-6.col-sm-6
-        .consulta
-          form(action='')
-            .grupo-formulario.columna
-              input.estilo-nombre(type='text' placeholder='Nombre' required='')
-            .grupo-formulario.columna
-              input.estilo-nombre(type='text' placeholder='Apellido' required='')
-            .grupo-formulario.columna
-              input.estilo-nombre(type='text' placeholder='E-mail' required='')
-            .grupo-formulario.columna
-              textarea(placeholder='  Mensaje' cols='47' rows='10')
-            .boton.bt-enviar
-              button(type='submit') ENVIAR
-footer
-  .footer
-    .row
-      .col-sm-4.col-md-4
-      .col-sm-4.col-md-4
-        div
+body
+  header
+    nav.navbar.navbar-default.navbar-fixed-top
+      div.container-fluid
+        // Brand and toggle get grouped for better mobile display
+        div.navbar-header
+          button.navbar-toggle.collapsed(type='button' data-toggle='collapse' data-target='#bs-example-navbar-collapse-1' aria-expanded='false')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          div.logo
+            a(href='#logo')
+              img(src='images/logo.png')
+        // Collect the nav links, forms, and other content for toggling
+        #bs-example-navbar-collapse-1.collapse.navbar-collapse
+          ul.nav.navbar-nav
+            li
+              a(href='#nosotros') NOSOTROS
+            li
+              a(href='#actividades') ACTIVIDADES
+            li
+              a(href='#paquetes') PAQUETES
+          ul.nav.navbar-nav.navbar-right
+            li
+              a(href='#mapa') UB&Iacute;CANOS
+            li.dropdown
+              a.dropdown-toggle(href='#' data-toggle='dropdown' role='button' aria-haspopup='true' aria-expanded='false')
+                | CONT&Aacute;CTO
+                span.caret
+              ul.dropdown-menu
+                li
+                  a(href='#contacto') CONT&Aacute;CTO
+  #myCarousel.carousel.slide(data-ride='carousel')
+    // Indicators
+    ol.carousel-indicators
+      li.active(data-target='#myCarousel' data-slide-to='0')
+      li(data-target='#myCarousel' data-slide-to='1')
+      li(data-target='#myCarousel' data-slide-to='2')
+      li(data-target='#myCarousel' data-slide-to='3')
+    // Wrapper for slides
+    div.carousel-inner(role='listbox')
+      div.item.active
+        img(src='images/banner/banner-1.jpg' alt='Chania')
+      div.item
+        img(src='images/banner/banner-2.jpg' alt='Chania')
+      div.item
+        img(src='images/banner/banner-3.jpg' alt='Flower')
+    // Left and right controls
+    a.left.carousel-control(href='#myCarousel' role='button' data-slide='prev')
+      span.glyphicon.glyphicon-chevron-left(aria-hidden='true')
+      span.sr-only Previous
+    a.right.carousel-control(href='#myCarousel' role='button' data-slide='next')
+      span.glyphicon.glyphicon-chevron-right(aria-hidden='true')
+      span.sr-only Next
+  div.redes.hidden-xs
+    div.social-icon.fb
+      a(href='# https://www.facebook.com/')
+    div.social-icon.twitter
+      a(href='# https://www.twitter.com/')
+    div.social-icon.youtube
+      a(href='# https://www.youtube.com/')
+  #nosotros.box
+    h2  Conoce a Nuestro Equipo 
+    h3 Desde 1970 formando a los mejores expertos en surf. 
+    div.container
+      div.row
+        div.col-md-4.col-sm-4
+          div.display
+            img.img-responsive(src='images/img-3.jpg')
+            div.overlay
+              div.frase
+                span  &iexcl;Adoro el surf! 
+          h4 Leticia Rodrigues
+          p T&eacute;cnico Surf Center
+        div.col-md-4.col-sm-4
+          div.display
+            img.img-responsive(src='images/img-6.jpg')
+            div.overlay
+              div.frase
+                span  &iexcl;No existe limites de edad! !
+          h4 Mark Hassan
+          p T&eacute;cnico Surf Children
+        div.col-md-4.col-sm-4
+          div.display
+            img.img-responsive(src='images/img-5.jpg')
+            div.overlay
+              div.frase
+                span  &iexcl;Cool!
+          h4 Julio Sarmiento
+          p T&eacute;cnico Surf Center
+  #actividades
+    div.container
+      div.row
+        div.col-md-3
+          span.glyphicon.glyphicon-grain(aria-hidden='true')
           p
-            | &copy; 2014 Olas Peru. Av. Larco 812 Miraflores, Lima, Per&uacute; 
+            | Actividades ecoamigables para 
             br
-            | +51 998 110 006, +51 243 6756, olas@peru.com
-          a(href='https://www.facebook.com/' target='blank')
-            img.img-circle(src='images/social-icons/fb-white.png' alt='Mixi4')
-          a(href='https://www.twitter.com/' target='blank')
-            img.img-circle(src='images/social-icons/twitter-white.png' alt='Mixi4')
-          a(href='https://www.youtube.com/' target='blank')
-            img.img-circle(src='images/social-icons/youtube-white.png' alt='Mixi4')
-          br
-      .col-sm-4.col-md-4
+            | el medio ambiente.
+        div.col-md-3
+          span.glyphicon.glyphicon-fire(aria-hidden='true')
+          p
+            | Fogatas durante y despu&eacute;s
+            br
+            | del sunset.
+        div.col-md-3
+          span.glyphicon.glyphicon-music(aria-hidden='true')
+          p
+            | M&uacute;sica durante todas 
+            br
+            |  las actividades.
+        div.col-md-3
+          span.glyphicon.glyphicon-tint(aria-hidden='true')
+          p
+            | Surf bajo la vigilancia
+            br
+            | de los expertos.
+  #paquetes1.box-2
+    h2  nuestros paquetes 
+    h3 Temporada Verano 
+    div.container
+      div.row
+        div.col-md-4.col-sm-4
+          div.columna1
+            div.pack1.texto-pack1 PACK 1
+            div.pack1.precio s/. 300 
+            div.pack1.periodo por un mes
+            div.pack1-border.semana Una vez por semana
+            div.pack1-border.paquete
+              | El paquete incluye:
+              ul
+                li Clase de surf (con instructores certificados) 
+                li  Accesorios  (tabla, wetsuit, pita, etc.) 
+                li  Seguro contra accidentes (MAPFRE) 
+            div.pack1-border.paquete1 Horarios accesibles
+            div.pack1-border.inscribete
+              div.boton
+                button(type='submit') INSCR&Iacute;BETE
+        div.col-md-4.col-sm-4
+          div.columna1
+            div.pack1.texto-pack1 PACK 2
+            div.pack1.precio s/. 600 
+            div.pack1.periodo por un mes
+            div.pack1-border.semana Dos veces por semana
+            div.pack1-border.paquete
+              | El paquete incluye:
+              ul
+                li Clase de surf (con instructores certificados) 
+                li  Accesorios  (tabla, wetsuit, pita, etc.) 
+                li  Seguro contra accidentes (MAPFRE) 
+            div.pack1-border.paquete1 Horarios accesibles
+            div.pack1-border.inscribete
+              div.boton
+                button(type='submit') INSCR&Iacute;BETE
+        div.col-md-4.col-sm-4
+          div.columna1
+            div.pack1.texto-pack1 PACK 3
+            div.pack1.precio s/. 800 
+            div.pack1.periodo por un mes
+            div.pack1-border.semana Tres veces por semana
+            div.pack1-border.paquete
+              | El paquete incluye:
+              ul
+                li Clase de surf (con instructores certificados) 
+                li  Accesorios  (tabla, wetsuit, pita, etc.) 
+                li  Seguro contra accidentes (MAPFRE) 
+            div.pack1-border.paquete1 Horarios accesibles
+            div.pack1-border.inscribete
+              div.boton
+                button(type='submit') INSCR&Iacute;BETE
+  #contacto.box
+    h2  Cont&aacute;ctanos 
+    h3 No pierdas la oportunidad de aprender a surfear. 
+    div.container
+      div.row.contacto-box
+        div.col-md-6.col-sm-6
+          div#mapa.mapa
+            iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7801.542063117854!2d-77.02861751451918!3d-12.127812792367818!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c81e39fe72af%3A0xf38ed38652be6a31!2sAv+Jose+Larco%2C+Miraflores+15074!5e0!3m2!1ses-419!2spe!4v1427606603251' width='100%' height='420px' frameborder='0' style='border:0')
+        div.col-md-6.col-sm-6
+          div.consulta
+            form(action='')
+              div.grupo-formulario.columna
+                input.estilo-nombre(type='text' placeholder='Nombre' required='')
+              div.grupo-formulario.columna
+                input.estilo-nombre(type='text' placeholder='Apellido' required='')
+              div.grupo-formulario.columna
+                input.estilo-nombre(type='text' placeholder='E-mail' required='')
+              div.grupo-formulario.columna
+                textarea(placeholder='  Mensaje' cols='47' rows='10')
+              div.boton.bt-enviar
+                button(type='submit') ENVIAR
+  footer
+    div.footer
+      div.row
+        div.col-sm-4.col-md-4
+        div.col-sm-4.col-md-4
+          div
+            p
+              | &copy; 2014 Olas Peru. Av. Larco 812 Miraflores, Lima, Per&uacute; 
+              br
+              | +51 998 110 006, +51 243 6756, olas@peru.com
+            a(href='https://www.facebook.com/' target='blank')
+              img.img-circle(src='images/social-icons/fb-white.png' alt='Mixi4')
+            a(href='https://www.twitter.com/' target='blank')
+              img.img-circle(src='images/social-icons/twitter-white.png' alt='Mixi4')
+            a(href='https://www.youtube.com/' target='blank')
+              img.img-circle(src='images/social-icons/youtube-white.png' alt='Mixi4')
+            br
+        div.col-sm-4.col-md-4
 script(src='js/main.min.js')
